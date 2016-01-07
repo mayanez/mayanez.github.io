@@ -1,0 +1,34 @@
+# top level stuff you probably don't need to touch
+highlighter: pygments
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 3000
+safe: true
+
+
+# edit here to achieve your personal greatness
+url: miguel.yanez.us
+baseurl: /
+title: Miguel A. Yanez
+author: Miguel A. Yanez
+description: Personal blog and resume
+avatar: profile.png
+email: email@yanez.us
+github: mayanez # username
+linkedin: mayanez
+flickr: mayanez
+delicious: mayanez
+twitter: yanezus
+gpgkeys: true
+resumeurl: http://files.yanez.us/Miguel_A_Yanez_Resume.pdf
+google_analytics: UA-45495763-1
+
+simhaurl: http://www.cs.columbia.edu/~simha/
+castlurl: http://castl.cs.columbia.edu
+
+# needed for travis-ci build
+exclude: [vendor]
