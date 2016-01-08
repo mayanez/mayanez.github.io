@@ -11,21 +11,21 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: miguel.yanez.us
+url: miguel.arroyo.me
 baseurl: /
-title: Miguel A. Yanez
-author: Miguel A. Yanez
+title: Miguel A. Arroyo
+author: Miguel A. Arroyo
 description: Personal blog and resume
 avatar: profile.png
-email: email@yanez.us
+email: email@arroyo.me
 github: mayanez # username
 linkedin: mayanez
 flickr: mayanez
 delicious: mayanez
 twitter: yanezus
 gpgkeys: true
-resumeurl: http://files.yanez.us/Miguel_A_Yanez_Resume.pdf
-google_analytics: UA-45495763-1
+resumeurl: http://bit.ly/1PMzUcU
+google_analytics: UA-72068313-1
 
 simhaurl: http://www.cs.columbia.edu/~simha/
 castlurl: http://castl.cs.columbia.edu
