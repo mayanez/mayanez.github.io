@@ -15,13 +15,12 @@ url: miguel.arroyo.me
 baseurl: /
 title: Miguel A. Arroyo
 author: Miguel A. Arroyo
-description: Personal blog and resume
+description: A bit about myself
 avatar: profile.png
 email: email@arroyo.me
 github: mayanez # username
 linkedin: mayanez
 flickr: mayanez
-delicious: mayanez
 twitter: miguelaarroyo12
 gpgkeys: true
 resumeurl: http://link.arroyo.me/miguelresume
@@ -29,6 +28,8 @@ google_analytics: UA-72068313-1
 
 simhaurl: http://www.cs.columbia.edu/~simha/
 castlurl: http://castl.cs.columbia.edu
+candidacyslidesurl: https://drive.google.com/open?id=1rzTED_vJn01VIofbiSGkYJqQL_UI5R4cIJYwZjeUeUk
+candidacysyllabusurl: https://drive.google.com/open?id=1jUkaPdekWI3F4IglRamCctUATu1fb9Fq 
 
 # needed for travis-ci build
 exclude: [vendor]
