@@ -1,5 +1,5 @@
 # top level stuff you probably don't need to touch
-highlighter: pygments
+highlighter: rouge
 markdown: rdiscount
 rdiscount:
   extensions: [smart]
@@ -16,7 +16,7 @@ baseurl: /
 title: Miguel A. Arroyo
 author: Miguel A. Arroyo
 description: A bit about myself
-avatar: profile.png
+avatar: oculus.jpg
 email: email@arroyo.me
 github: mayanez # username
 linkedin: mayanez
