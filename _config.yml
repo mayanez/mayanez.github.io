@@ -29,6 +29,7 @@ simhaurl: http://www.cs.columbia.edu/~simha/
 castlurl: http://castl.cs.columbia.edu
 candidacyslidesurl: https://drive.google.com/open?id=1rzTED_vJn01VIofbiSGkYJqQL_UI5R4cIJYwZjeUeUk
 candidacysyllabusurl: https://drive.google.com/open?id=1jUkaPdekWI3F4IglRamCctUATu1fb9Fq 
+yolopaperurl: https://drive.google.com/open?id=1Luut2_m9TmyqBJuD1xGEgDVVRWgqyKNF
 
 # needed for travis-ci build
 exclude: [vendor]
