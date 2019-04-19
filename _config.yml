@@ -32,5 +32,6 @@ candidacysyllabusurl: https://drive.google.com/open?id=1jUkaPdekWI3F4IglRamCctUA
 yolopaperurl: https://drive.google.com/open?id=1Luut2_m9TmyqBJuD1xGEgDVVRWgqyKNF
 yoloslidesurl: https://drive.google.com/open?id=1DWL73UbgIlcUZHjG_Ag8mMS8IFMjSZar_CVk7o0fsZU
 asploswaciurl: https://drive.google.com/open?id=1R0FLs6rwKFB059FRbLvPEssaCpJVYcKfhCy2DQQvCAQ
+ropslidesurl: https://drive.google.com/open?id=1rXGc_jSnR1Qcevr_ZyNbadboNxZ8J62JD5XXqUA5IJk
 # needed for travis-ci build
 exclude: [vendor]
