@@ -11,7 +11,7 @@ safe: true
 
 # edit here to achieve your personal greatness
 url: miguel.arroyo.me
-baseurl: /
+baseurl: ""
 title: Miguel A. Arroyo
 author: Miguel A. Arroyo
 description: A bit about myself
@@ -31,6 +31,7 @@ candidacyslidesurl: https://drive.google.com/open?id=1rzTED_vJn01VIofbiSGkYJqQL_
 candidacysyllabusurl: https://drive.google.com/open?id=1jUkaPdekWI3F4IglRamCctUATu1fb9Fq 
 yolopaperurl: https://drive.google.com/open?id=1Luut2_m9TmyqBJuD1xGEgDVVRWgqyKNF
 yoloslidesurl: https://drive.google.com/open?id=1DWL73UbgIlcUZHjG_Ag8mMS8IFMjSZar_CVk7o0fsZU
+yolovideosurl: https://www.youtube.com/playlist?list=PL4UBpWp0d9Jq7_NP22SsiBwGRbMa6lPGH
 asploswaciurl: https://drive.google.com/open?id=1R0FLs6rwKFB059FRbLvPEssaCpJVYcKfhCy2DQQvCAQ
 ropslidesurl: https://drive.google.com/open?id=1rXGc_jSnR1Qcevr_ZyNbadboNxZ8J62JD5XXqUA5IJk
 # needed for travis-ci build
