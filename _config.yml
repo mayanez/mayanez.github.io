@@ -36,5 +36,8 @@ yolobiburl: https://www.spiedigitallibrary.org/citation/download/citation-11009_
 yolodoi: 10.1117/12.2518909
 asploswaciurl: https://drive.google.com/open?id=1R0FLs6rwKFB059FRbLvPEssaCpJVYcKfhCy2DQQvCAQ
 ropslidesurl: https://drive.google.com/open?id=1rXGc_jSnR1Qcevr_ZyNbadboNxZ8J62JD5XXqUA5IJk
+califormspaperurl: https://drive.google.com/open?id=1rkMEnAL3LfjmatYBraYHiYGalJdYE8Bu
+califormsdoi: 0
+
 # needed for travis-ci build
 exclude: [vendor]
