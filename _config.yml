@@ -40,7 +40,8 @@ ropslidesurl: https://drive.google.com/open?id=1rXGc_jSnR1Qcevr_ZyNbadboNxZ8J62J
 califormspaperurl: https://drive.google.com/open?id=1H-VBjNN63RJPhKnOYzHFKPeHiu-gFBqm 
 califormsvideosurl: https://www.youtube.com/playlist?list=PL4UBpWp0d9Jq1TVTo6SbfMSAyLZR3y4wA
 califormsposterurl: https://drive.google.com/open?id=1m_niaDoq1lujhqdJzyVZGkeFTbKa2A2o
-califormsdoi: 0
+califormsbiburl: https://dl.acm.org/downformats.cfm?id=3358299&parent_id=3352460&expformat=bibtex
+califormsdoi: 10.1145/3352460.3358299
 
 # needed for travis-ci build
 exclude: [vendor]
