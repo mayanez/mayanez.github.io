@@ -41,7 +41,7 @@ califormspaperurl: https://drive.google.com/open?id=1H-VBjNN63RJPhKnOYzHFKPeHiu-
 califormsvideosurl: https://www.youtube.com/playlist?list=PL4UBpWp0d9Jq1TVTo6SbfMSAyLZR3y4wA
 califormsposterurl: https://drive.google.com/open?id=1m_niaDoq1lujhqdJzyVZGkeFTbKa2A2o
 califormsbiburl: https://dl.acm.org/downformats.cfm?id=3358299&parent_id=3352460&expformat=bibtex
-califormsslidesurl: https://drive.google.com/open?id=1Tq-4sbZ0lwmnhffNilVop1ey6oEVU8Yh8d_TgMsrm14
+califormsslidesurl: https://drive.google.com/open?id=1siOh7pfrwkKVhdx28NUSWvR2yAJeD3iA2Qvh0tytQ6o 
 califormsdoi: 10.1145/3352460.3358299
 
 # needed for travis-ci build
