@@ -1,0 +1,14 @@
+- title: About
+  title_footer: about
+  url: /
+  external: false
+
+- title: Resume
+  title_footer: resume
+  url: /resume
+  external: false
+
+- title: Resources
+  title_footer: resources
+  url: /resources
+  external: false 

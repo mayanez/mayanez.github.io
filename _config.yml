@@ -1,54 +1,86 @@
-# top level stuff you probably don't need to touch
-highlighter: rouge
-rdiscount:
-  extensions: [smart]
-permalink: /:title.html
-paginate: 5
-plugins: [jekyll-paginate]
-port: 3000
-safe: true
-
-
-# edit here to achieve your personal greatness
-url: miguel.arroyo.me
-baseurl: ""
-title: Miguel A. Arroyo
-author: Miguel A. Arroyo
+# Site settings
+title: Miguel A. Arroyo 
 description: A bit about myself
-avatar: profile2.png
-email: email@arroyo.me
-github: mayanez # username
+
+lang: en-US
+timezone: US/Pacific
+image: 
+mode: dark # default theme "dark" | "light"
+
+# Profile settings
+author:
+  name: Miguel A. Arroyo
+  bio: >-
+    CS PhD Candidate @ <a class="columbia-font" href="http://www.cs.columbia.edu">Columbia University</a>
+
+  username: mayanez
+  email: miguel@arroyo.me 
+  avatar: /assets/img/avatar.png
+
+github: mayanez
 linkedin: mayanez
 flickr: mayanez
 twitter: miguelaarroyo12
 scholar: uROt9w4AAAAJ
-gpgkeys: true
-resumeurl: http://link.arroyo.me/miguelresume
-google_analytics: UA-72068313-1
+
+# Url settings
+url: "https://miguel.arroyo.me"
+baseurl:
+permalink: /:title/
 
 simhaurl: http://www.cs.columbia.edu/~simha/
 castlurl: http://castl.cs.columbia.edu
-candidacyslidesurl: https://drive.google.com/open?id=1rzTED_vJn01VIofbiSGkYJqQL_UI5R4cIJYwZjeUeUk
-candidacysyllabusurl: https://drive.google.com/open?id=1jUkaPdekWI3F4IglRamCctUATu1fb9Fq 
-yolopaperurl: https://drive.google.com/open?id=1Luut2_m9TmyqBJuD1xGEgDVVRWgqyKNF
-yoloslidesurl: https://drive.google.com/open?id=1DWL73UbgIlcUZHjG_Ag8mMS8IFMjSZar_CVk7o0fsZU
-yoloslidesdarsurl: https://drive.google.com/open?id=1rRBDyIuQVGbvypQc4NBzi08L40cruhycGCRU7f5nPlA
-yolovideosurl: https://www.youtube.com/playlist?list=PL4UBpWp0d9Jq7_NP22SsiBwGRbMa6lPGH
-yolobiburl: https://www.spiedigitallibrary.org/citation/download/citation-11009_166.bib
-yolodoi: 10.1117/12.2518909
-asploswaciurl: https://drive.google.com/open?id=1R0FLs6rwKFB059FRbLvPEssaCpJVYcKfhCy2DQQvCAQ
-ropeventurl: https://www.meetup.com/siliconvalleysecurity/events/259399649/ 
-ropslidesurl: https://drive.google.com/open?id=1rXGc_jSnR1Qcevr_ZyNbadboNxZ8J62JD5XXqUA5IJk
-ropcodeurl: https://gist.github.com/mayanez/c6bb9f2a26fa75261a9a26a0a637531b
-califormspaperurl: https://drive.google.com/open?id=1H-VBjNN63RJPhKnOYzHFKPeHiu-gFBqm 
-califormstoppicksurl: https://drive.google.com/open?id=1ffEdAygG9yDDZh8uRzIil4MILqmIdzTK
-califormsvideosurl: https://www.youtube.com/playlist?list=PL4UBpWp0d9Jq1TVTo6SbfMSAyLZR3y4wA
-califormsposterurl: https://drive.google.com/open?id=1m_niaDoq1lujhqdJzyVZGkeFTbKa2A2o
-califormsbiburl: https://dl.acm.org/downformats.cfm?id=3358299&parent_id=3352460&expformat=bibtex
-califormsslidesurl: https://drive.google.com/open?id=1siOh7pfrwkKVhdx28NUSWvR2yAJeD3iA2Qvh0tytQ6o 
-califormsdoi: 10.1145/3352460.3358299
-dopeventurl: https://www.meetup.com/siliconvalleysecurity/events/269320406/ 
-dopcodeurl: https://github.com/mayanez/min-dop 
 
-# needed for travis-ci build
-exclude: [vendor]
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
+
+# Build settings
+sass:
+  style: compressed
+
+include:
+  - _redirects
+  - .htaccess
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CHANGELOG.md
+  - README.md
+  - node_modules
+  - CODE_OF_CONDUCT.md
+
+# Plugins
+plugins:
+  - jekyll-sass-converter
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
+  - rouge

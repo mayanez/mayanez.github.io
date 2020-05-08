@@ -5,112 +5,69 @@ title: Resources
 
 <section id="resources">
 <div class="container">
-  <h3>Resources</h3>
   <div class="panel panel-default">
     <div class="panel-body">
 
-    <div class="entry">
-        <h5>
-            <i class="fa fa-file"></i><strong>&nbsp;&nbsp;Practical Byte-Granular Memory Blacklisting using Califorms</strong>
-        </h5>
-        <h6><a href="https://doi.org/{{ site.califormsdoi }}">IEEE/ACM International Symposium on Microarchitecture (MICRO) 2019</a>&nbsp;-&nbsp;<small>(DOI: {{ site.califormsdoi }})</small></h6>
-
-	<h6><em>IEEE Micro Top Picks Honorable Mention</em></h6>
-        <p></p>
-        <ul>
-	    <li><a href="{{ site.califormspaperurl }}">Paper (MICRO)</a>&nbsp;&nbsp;-&nbsp;&nbsp;<small>(<a href="{{ site.califormsbiburl }}">bib</a>)</small></li>
-      <li><a href="{{ site.califormstoppicksurl }}">Paper (Top Picks)</a></li>
-	    <li><a href="{{ site.califormsslidesurl }}">Slides</a></li>
-	    <li><a href="{{ site.califormsposterurl }}">Poster</a></li>
-	    <li><a href="{{ site.califormsvideosurl }}">Videos</a></li>
-        </ul>
-    </div>
-
-    <div class="entry">
-        <h5>
-            <i class="fa fa-file"></i><strong>&nbsp;&nbsp;YOLO: Frequently Resetting Cyber-Physical Systems for Security</strong>
-        </h5>
-        <h6><a href="https://doi.org/{{ site.yolodoi }}">SPIE Defense & Commercial Sensing 2019</a>&nbsp;-&nbsp;<small>(DOI: {{ site.yolodoi }})</small></h6>
-        <p></p>
-        <ul>
-            <li><a href="{{ site.yolopaperurl }}">Paper</a>&nbsp;&nbsp;-&nbsp;&nbsp;<small>(<a href="{{ site.yolobiburl }}">bib</a>)</small></li>
-            <li><a href="{{ site.yoloslidesurl }}">Slides (SPIE)</a></li>
-            <li><a href="{{ site.yoloslidesdarsurl }}">Slides (DARS)</a></li>
-            <li><a href="{{ site.yolovideosurl }}">Videos</a></li>
-        </ul>
-    </div>
-
-    <div class="entry">
-        <h5>
-            <i class="fa fa-file"></i><strong>&nbsp;&nbsp;Charting the Cyber-Physical System Security Landscape</strong>
-        </h5>
-        <h6>Ph.D. Candidacy Exam</h6>
-        <ul>
-            <li><a href="{{ site.candidacysyllabusurl }}">Syllabus</a></li>
-            <li><a href="{{ site.candidacyslidesurl }}">Slides</a></li>
-        </ul>
-    </div>
-    <div class="entry">
-        <h5>
-            <i class="fa fa-slideshare"></i><strong>&nbsp;&nbsp;WACI: How To Make Driving Awesome</strong>
-        </h5>
-        <h6><a href="https://www.asplos2018.org/program/">ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2018</a></h6>
-        <ul>
-            <li><a href="{{ site.asploswaciurl }}">Slides</a></li>
-        </ul>
-    </div>
-    <div class="entry">
-        <h5>
-            <i class="fa fa-slideshare"></i><strong>&nbsp;&nbsp;Go Go Gadget! An Intro to Return Oriented Programming (ROP)</strong>
-        </h5>
-        <h6><a href="{{ site.ropeventurl }}">Silicon Valley Cyber Security Meetup</a></h6>
-        <ul>
-            <li><a href="{{ site.ropslidesurl }}">Slides</a></li>
-            <li><a href="{{ site.ropcodeurl }}">Code</a></li>
-        </ul>
-    </div>
-    <div class="entry">
-        <h5>
-            <i class="fa fa-slideshare"></i><strong>&nbsp;&nbsp;A Story of Under-C Discovery and Adventure: A look at Memory Safety</strong>
-        </h5>
-        <h6><a href="{{ site.dopeventurl }}">Silicon Valley Cyber Security Meetup</a></h6>
-        <ul>
-            <li><a href="#">Slides (Coming Soon)</a></li>
-            <li><a href="{{ site.dopcodeurl }}">Code</a></li>
-        </ul>
-    </div>
-    <div class="entry">
-        <h5>
-            <i class="fa fa-code-fork"></i><strong>&nbsp;&nbsp;LLVM & Clang Pass Collection</strong>
-        </h5>
-        <ul>
-            <li><a href="https://github.com/mayanez/llvm-clang-passes">Repo</a></li>
-        </ul>
-    </div>
-    <div class="entry">
-         <h5>
-            <i class="fa fa-code-fork"></i><strong>&nbsp;&nbsp;Multi-Architecture Cross Compilation Docker</strong>
-         </h5>
-         <ul>
-            <li><a href="https://github.com/mayanez/crossdev">Repo</a></li>
-         </ul>
-    </div>
-    <div class="entry">
-         <h5>
-            <i class="fa fa-code-fork"></i><strong>&nbsp;&nbsp;Minimal DOP Vulnerability + Exploits</strong>
-         </h5>
-         <ul>
-            <li><a href="{{ site.dopcodeurl }}">Repo</a></li>
-         </ul>
-    </div>
-    <div class="entry">
-         <h5>
-            <i class="fa fa-code-fork"></i><strong>&nbsp;&nbsp;Complete LLVM Toolchain with musl</strong>
-         </h5>
-         <ul>
-            <li><a href="https://github.com/mayanez/Complete-LLVM-Toolchain">Repo (Coming Soon)</a></li>
-         </ul>
-    </div>
+        {% for resource in site.data.resources %}
+        <div class="resource-entry">
+          {% if resource.publication %}
+          <h3>
+              <i class="fas fa-graduation-cap"></i><strong>&nbsp;&nbsp;{{ resource.publication.title }}</strong>
+          </h3>
+          {% if resource.publication.venue %}
+          <h6><a href="https://doi.org/{{ resource.publication.doi }}">{{ resource.publication.venue }}</a></h6>
+          <h6><small>(DOI: {{ resource.publication.doi }})</small></h6>
+          {% endif %}
+          {% if resource.publication.subcaption %}
+          <h6>{{ resource.publication.subcaption }}</h6>
+          {% endif %}
+          {% if resource.publication.files %}
+          <br/>
+          <ul class="fa-ul">
+            {% for file in resource.publication.files %}
+            {% if file.pdf %}
+            <li><span class="fa-li"><i class="fas fa-file-pdf"></i></span><a href="{{ file.pdf.url }}">{{ file.pdf.name }}</a></li>
+            {% endif %}
+            {% if file.ppt %}
+            <li><span class="fa-li"><i class="fas fa-file-powerpoint"></i></span><a href="{{ file.ppt.url }}">{{ file.ppt.name }}</a></li>
+            {% endif %}
+            {% if file.video %}
+            <li><span class="fa-li"><i class="fas fa-file-video"></i></span><a href="{{ file.video.url }}">{{ file.video.name }}</a></li>
+            {% endif %}
+            {% if file.code %} 
+            <li><span class="fa-li"><i class="fas fa-file-code"></i></span><a href="{{ file.code.url }}">{{ file.code.name }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% endif %}
+          {% if resource.talk %}
+          <h3>
+              <i class="fab fa-slideshare"></i><strong>&nbsp;&nbsp;{{ resource.talk.title }}</strong>
+          </h3>
+          <h6><a href="{{ resource.talk.url }}">{{ resource.talk.venue }}</a></h6>
+          {% if resource.talk.files %}
+          <br/>
+          <ul class="fa-ul">
+            {% for file in resource.talk.files %}
+            {% if file.pdf %}
+            <li><span class="fa-li"><i class="fas fa-file-pdf"></i></span><a href="{{ file.pdf.url }}">{{ file.pdf.name }}</a></li>
+            {% endif %}
+            {% if file.ppt %}
+            <li><span class="fa-li"><i class="fas fa-file-powerpoint"></i></span><a href="{{ file.ppt.url }}">{{ file.ppt.name }}</a></li>
+            {% endif %}
+            {% if file.video %}
+            <li><span class="fa-li"><i class="fas fa-file-video"></i></span><a href="{{ file.video.url }}">{{ file.video.name }}</a></li>
+            {% endif %}
+            {% if file.code %} 
+            <li><span class="fa-li"><i class="fas fa-file-code"></i></span><a href="{{ file.code.url }}">{{ file.code.name }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endfor %}
     </div>
   </div>
 </div>

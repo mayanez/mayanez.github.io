@@ -1,15 +1,15 @@
 <div class="social">
 	<h4>
-    {% if site.email %}
-      <a href="mailto:{{ site.email}}"><i class="fa fa-envelope"></i></a>
+    {% if site.author.email %}
+      <a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope"></i></a>
     {% endif %}
 
     {% if site.github %}
-        <a href="http://github.com/{{ site.github }}"><i class="fa fa-github"></i></a>
+        <a href="http://github.com/{{ site.github }}"><i class="fab fa-github"></i></a>
     {% endif %}
 
     {% if site.linkedin %}
-        <a href="http://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i></a>
+        <a href="http://linkedin.com/in/{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>
     {% endif %}
 
     {% if site.scholar %}
@@ -17,23 +17,19 @@
     {% endif %}
 
     {% if site.twitter %}
-        <a href="http://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i></a>
+        <a href="http://twitter.com/{{ site.twitter }}"><i class="fab fa-twitter"></i></a>
     {% endif %}
 
     {% if site.stackoverflow %}
-        <a href="http://stackoverflow.com/{{ site.stackoverflow }}"><i class="fa fa-stack-overflow"></i></a>
+        <a href="http://stackoverflow.com/{{ site.stackoverflow }}"><i class="fab fa-stack-overflow"></i></a>
     {% endif %}
 
     {% if site.flickr %}
-        <a href="http://flickr.com/photos/{{ site.flickr }}"><i class="fa fa-flickr"></i></a>
-    {% endif %}
-
-    {% if site.delicious %}
-        <a href="http://delicious.com/{{ site.delicious }}"><i class="fa fa-delicious"></i></a>
+        <a href="http://flickr.com/photos/{{ site.flickr }}"><i class="fas fa-camera-retro"></i></a>
     {% endif %}
 
 	  {% if site.gpgkeys %}
-        <a href="{{ site.baseurl }}keys/arroyo.me.pub.asc"><i class="fa fa-lock"></i></a>
+        <a href="{{ site.baseurl }}keys/arroyo.me.pub.asc"><i class="fas fa-lock"></i></a>
 	  {% endif %}
 
 	</h4>
