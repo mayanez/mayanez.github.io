@@ -79,8 +79,8 @@
     url: "https://www.meetup.com/siliconvalleysecurity/events/269320406/" 
     files:
       - ppt:
-          name: Slides
-          url: "https://drive.google.com/open?id=1PxaGTQ6Dz9hcHZKhTvvokFAwa8h8Xk1TIUJi7f_2bnY"
+          name: Slides (Coming Soon)
+          url: "#"
       - code:
           name: Repo
           url: "https://github.com/mayanez/min-dop"
