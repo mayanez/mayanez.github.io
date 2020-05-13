@@ -6,16 +6,16 @@
     files:
       - pdf:
           name: Paper (MICRO)
-          url: "https://drive.google.com/open?id=1H-VBjNN63RJPhKnOYzHFKPeHiu-gFBqm"
+          url: "/files/califorms_paper_MICRO52.pdf"
       - pdf:
           name: Paper (TopPicks)
-          url: "https://drive.google.com/open?id=1ffEdAygG9yDDZh8uRzIil4MILqmIdzTK"
+          url: "/files/califorms_IEEE_top_picks.pdf"
       - pdf:
           name: Poster
-          url: "https://drive.google.com/open?id=1m_niaDoq1lujhqdJzyVZGkeFTbKa2A2o" 
+          url: "/files/califorms_poster_MICRO52.pdf"
       - ppt:
           name: Slides
-          url: "https://drive.google.com/open?id=1siOh7pfrwkKVhdx28NUSWvR2yAJeD3iA2Qvh0tytQ6o"
+          url: "/files/califorms_slides_MICRO52.pdf"
       - video:
           name: Video
           url: "https://www.youtube.com/playlist?list=PL4UBpWp0d9Jq1TVTo6SbfMSAyLZR3y4wA"
@@ -47,10 +47,10 @@
     files:
       - pdf:
           name: Syllabus
-          url: "https://drive.google.com/open?id=1jUkaPdekWI3F4IglRamCctUATu1fb9Fq"
+          url: "/files/candidacy_exam_syllabus.pdf"
       - ppt:
           name: Slides
-          url: "https://drive.google.com/open?id=1rzTED_vJn01VIofbiSGkYJqQL_UI5R4cIJYwZjeUeUk"
+          url: "/files/candidacy_exam_slides.pdf"
 
 - talk:
     title: "WACI: How To Make Driving Awesome"
@@ -68,10 +68,10 @@
     files:
       - ppt:
           name: Slides
-          url: "https://drive.google.com/open?id=1rXGc_jSnR1Qcevr_ZyNbadboNxZ8J62JD5XXqUA5IJk"
+          url: "/files/go_go_gadget-an_intro_to_ROP.pdf"
       - code:
           name: Repo
-          url: https://gist.github.com/mayanez/c6bb9f2a26fa75261a9a26a0a637531b
+          url: "https://gist.github.com/mayanez/c6bb9f2a26fa75261a9a26a0a637531b"
 
 - talk:
     title: "A Story of Under-C Discovery and Adventure: A look at Memory Safety"
