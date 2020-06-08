@@ -3,9 +3,9 @@
   url: /
   external: false
 
-- title: Resume
-  title_footer: resume
-  url: /resume
+- title: CV
+  title_footer: cv
+  url: /cv
   external: false
 
 - title: Resources

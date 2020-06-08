@@ -15,8 +15,13 @@ title: Resources
               <i class="fas fa-graduation-cap"></i><strong>&nbsp;&nbsp;{{ resource.publication.title }}</strong>
           </h3>
           {% if resource.publication.venue %}
+          {% if resource.publication.doi %}
           <h6><a href="https://doi.org/{{ resource.publication.doi }}">{{ resource.publication.venue }}</a></h6>
           <h6><small>(DOI: {{ resource.publication.doi }})</small></h6>
+          {% endif %}
+          {% if resource.publication.arxiv %}
+          <h6><a href="https://arxiv.org/{{ resource.publication.arxiv }}">{{ resource.publication.venue }}</a></h6>
+          {% endif %}
           {% endif %}
           {% if resource.publication.subcaption %}
           <h6>{{ resource.publication.subcaption }}</h6>

@@ -1,4 +1,13 @@
 - publication:
+    title: Using Name Confusion to Enhance Security
+    venue: arXiv
+    arxiv: abs/1911.02038
+    files:
+      - pdf:
+          name: Paper (Pre-Print)
+          url: "https://arxiv.org/pdf/1911.02038.pdf"
+
+- publication:
     title: Practical Byte-Granular Memory Blacklisting using Califorms
     venue: IEEE/ACM International Symposium on Microarchitecture (MICRO) 2019
     doi: 10.1145/3352460.3358299
