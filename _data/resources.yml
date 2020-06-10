@@ -83,13 +83,16 @@
           url: "https://gist.github.com/mayanez/c6bb9f2a26fa75261a9a26a0a637531b"
 
 - talk:
-    title: "A Story of Under-C Discovery and Adventure: A look at Memory Safety"
+    title: "A Story of Under-C Discovery and Adventure: A Look at Memory Safety"
     venue: Silicon Valley Cyber Security Meetup 
     url: "https://www.meetup.com/siliconvalleysecurity/events/269320406/" 
     files:
       - ppt:
           name: Slides
           url: "/files/A_Story_of_Under-C_Discovery_and_Adventure-A_look_at_Memory_Safety.pdf"
+      - video:
+          name: Video
+          url: "https://youtu.be/psZJNSquskI"
       - code:
           name: Repo
           url: "https://github.com/mayanez/min-dop"
