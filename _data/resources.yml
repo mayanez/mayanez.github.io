@@ -1,4 +1,13 @@
 - publication:
+    title: "SPAM: Stateless Permutation of Application Memory"
+    venue: arXiv
+    arxiv: abs/2007.13808
+    files:
+      - pdf:
+          name: Paper (Pre-Print)
+          url: "https://arxiv.org/pdf/2007.13808.pdf"
+
+- publication:
     title: Using Name Confusion to Enhance Security
     venue: arXiv
     arxiv: abs/1911.02038
