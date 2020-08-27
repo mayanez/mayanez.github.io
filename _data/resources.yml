@@ -6,6 +6,12 @@
       - pdf:
           name: Paper (Pre-Print)
           url: "https://arxiv.org/pdf/2007.13808.pdf"
+      - ppt:
+          name: Slides (LLVM Developers' Meeting 2020) [Coming Soon]
+          url: "https://blog.llvm.org/posts/2020-08-23-llvmdevmtgprogram/"
+      - video:
+          name: Video (LLVM Developers' Meeting 2020) [Coming Soon]
+          url: "https://blog.llvm.org/posts/2020-08-23-llvmdevmtgprogram/"
 
 - publication:
     title: Using Name Confusion to Enhance Security
@@ -28,6 +34,9 @@
       - pdf:
           name: Paper (TopPicks)
           url: "/files/califorms_IEEE_top_picks.pdf"
+      - pdf:
+          name: Paper (arXiv)
+          url: "https://arxiv.org/pdf/1906.01838.pdf"
       - pdf:
           name: Poster
           url: "/files/califorms_poster_MICRO52.pdf"
@@ -71,13 +80,19 @@
           url: "/files/candidacy_exam_slides.pdf"
 
 - talk:
-    title: "WACI: How To Make Driving Awesome"
-    venue: ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2018
-    url: "https://www.asplos2018.org/program/"
+    title: "A Story of Under-C Discovery and Adventure: A Look at Memory Safety"
+    venue: Silicon Valley Cyber Security Meetup 
+    url: "https://www.meetup.com/siliconvalleysecurity/events/269320406/" 
     files:
       - ppt:
           name: Slides
-          url: "https://drive.google.com/open?id=1R0FLs6rwKFB059FRbLvPEssaCpJVYcKfhCy2DQQvCAQ"
+          url: "/files/A_Story_of_Under-C_Discovery_and_Adventure-A_look_at_Memory_Safety.pdf"
+      - video:
+          name: Video
+          url: "https://youtu.be/psZJNSquskI"
+      - code:
+          name: Repo
+          url: "https://github.com/mayanez/min-dop"
 
 - talk:
     title: Go Go Gadget! An Intro to Return Oriented Programming (ROP)
@@ -92,16 +107,10 @@
           url: "https://gist.github.com/mayanez/c6bb9f2a26fa75261a9a26a0a637531b"
 
 - talk:
-    title: "A Story of Under-C Discovery and Adventure: A Look at Memory Safety"
-    venue: Silicon Valley Cyber Security Meetup 
-    url: "https://www.meetup.com/siliconvalleysecurity/events/269320406/" 
+    title: "WACI: How To Make Driving Awesome"
+    venue: ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2018
+    url: "https://www.asplos2018.org/program/"
     files:
       - ppt:
           name: Slides
-          url: "/files/A_Story_of_Under-C_Discovery_and_Adventure-A_look_at_Memory_Safety.pdf"
-      - video:
-          name: Video
-          url: "https://youtu.be/psZJNSquskI"
-      - code:
-          name: Repo
-          url: "https://github.com/mayanez/min-dop"
+          url: "https://drive.google.com/open?id=1R0FLs6rwKFB059FRbLvPEssaCpJVYcKfhCy2DQQvCAQ"
