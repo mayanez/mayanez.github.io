@@ -7,11 +7,11 @@
           name: Paper (Pre-Print)
           url: "https://arxiv.org/pdf/2007.13808.pdf"
       - ppt:
-          name: Slides (LLVM Developers' Meeting 2020) [Coming Soon]
-          url: "https://blog.llvm.org/posts/2020-08-23-llvmdevmtgprogram/"
+          name: Slides (LLVM Developers' Meeting 2020)
+          url: "/files/SPAM_LLVM20_Developers_Meeting.pdf"
       - video:
-          name: Video (LLVM Developers' Meeting 2020) [Coming Soon]
-          url: "https://blog.llvm.org/posts/2020-08-23-llvmdevmtgprogram/"
+          name: Video (LLVM Developers' Meeting 2020)
+          url: "https://youtu.be/BPb_gm2J1GE"
 
 - publication:
     title: Using Name Confusion to Enhance Security
