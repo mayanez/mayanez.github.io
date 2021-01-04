@@ -11,8 +11,7 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Miguel A. Arroyo
   bio: >-
-    CS PhD Candidate @ <a class="columbia-font" href="http://www.cs.columbia.edu">Columbia University</a>
-
+    Game Security Engineer
   username: mayanez
   email: miguel@arroyo.me 
   avatar: /assets/img/avatar.png
