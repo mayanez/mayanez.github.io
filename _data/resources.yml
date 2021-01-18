@@ -1,4 +1,16 @@
 - publication:
+    title: Bespoke Security for Cyber-Physical Systems
+    venue: Ph.D. Dissertation
+    doi: 10.7916/d8-cgaj-mz52
+    files:
+      - pdf:
+          name: Dissertation
+          url: "https://academiccommons.columbia.edu/doi/10.7916/d8-cgaj-mz52"
+      - ppt:
+          name: Slides
+          url: "/files/Bespoke_Security_for_Cyber_Physical_Systems_Slides.pdf"
+
+- publication:
     title: "SPAM: Stateless Permutation of Application Memory"
     venue: arXiv
     arxiv: abs/2007.13808

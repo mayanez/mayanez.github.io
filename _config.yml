@@ -29,6 +29,7 @@ permalink: /:title/
 
 simhaurl: http://www.cs.columbia.edu/~simha/
 castlurl: http://castl.cs.columbia.edu
+cvurl: /files/cv.pdf
 
 # Markdown settings
 markdown: kramdown
