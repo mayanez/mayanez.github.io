@@ -1,23 +1,79 @@
 ---
-layout: compress
+layout: page
+title: ISCA 2021 Papers & Videos
 ---
 
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en " }}">
-  
-{% include header.html %}
-<body>
-  <main aria-label="Content">
-    {% include navbar.html %}
-    <div class="wrapper not-found">
-      <div class="container">
-        <div class="title">ISCA 21 Papers and Videos</div>
-        <p class="phrase">We'll be updating this page with links. Check back in soon!</p>
-        <a class="solution" href="{{ site.url }}">back home</a>
-      </div>
-    </div>
-    {% include footer.html %}
-  </main>
-</body>
+<section id="resources">
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
 
-</html>
+        {% for resource in site.data.isca21 %}
+        <div class="resource-entry">
+          {% if resource.publication %}
+          <h3>
+              <i class="fas fa-graduation-cap"></i><strong>&nbsp;&nbsp;{{ resource.publication.title }}</strong>
+          </h3>
+          {% if resource.publication.venue %}
+          {% if resource.publication.doi %}
+          <h6><a href="https://doi.org/{{ resource.publication.doi }}">{{ resource.publication.venue }}</a></h6>
+          <h6><small>(DOI: {{ resource.publication.doi }})</small></h6>
+          {% endif %}
+          {% if resource.publication.arxiv %}
+          <h6><a href="https://arxiv.org/{{ resource.publication.arxiv }}">{{ resource.publication.venue }}</a></h6>
+          {% endif %}
+          {% endif %}
+          {% if resource.publication.subcaption %}
+          <h6>{{ resource.publication.subcaption }}</h6>
+          {% endif %}
+          {% if resource.publication.files %}
+          <br/>
+          <ul class="fa-ul">
+            {% for file in resource.publication.files %}
+            {% if file.pdf %}
+            <li><span class="fa-li"><i class="fas fa-file-pdf"></i></span><a href="{{ file.pdf.url }}">{{ file.pdf.name }}</a></li>
+            {% endif %}
+            {% if file.ppt %}
+            <li><span class="fa-li"><i class="fas fa-file-powerpoint"></i></span><a href="{{ file.ppt.url }}">{{ file.ppt.name }}</a></li>
+            {% endif %}
+            {% if file.video %}
+            <li><span class="fa-li"><i class="fas fa-file-video"></i></span><a href="{{ file.video.url }}">{{ file.video.name }}</a></li>
+            {% endif %}
+            {% if file.code %} 
+            <li><span class="fa-li"><i class="fas fa-file-code"></i></span><a href="{{ file.code.url }}">{{ file.code.name }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% endif %}
+          {% if resource.talk %}
+          <h3>
+              <i class="fab fa-slideshare"></i><strong>&nbsp;&nbsp;{{ resource.talk.title }}</strong>
+          </h3>
+          <h6><a href="{{ resource.talk.url }}">{{ resource.talk.venue }}</a></h6>
+          {% if resource.talk.files %}
+          <br/>
+          <ul class="fa-ul">
+            {% for file in resource.talk.files %}
+            {% if file.pdf %}
+            <li><span class="fa-li"><i class="fas fa-file-pdf"></i></span><a href="{{ file.pdf.url }}">{{ file.pdf.name }}</a></li>
+            {% endif %}
+            {% if file.ppt %}
+            <li><span class="fa-li"><i class="fas fa-file-powerpoint"></i></span><a href="{{ file.ppt.url }}">{{ file.ppt.name }}</a></li>
+            {% endif %}
+            {% if file.video %}
+            <li><span class="fa-li"><i class="fas fa-file-video"></i></span><a href="{{ file.video.url }}">{{ file.video.name }}</a></li>
+            {% endif %}
+            {% if file.code %} 
+            <li><span class="fa-li"><i class="fas fa-file-code"></i></span><a href="{{ file.code.url }}">{{ file.code.name }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+</section>

@@ -1,0 +1,30 @@
+- publication:
+    title: "ZeRØ: Zero-Overhead Resilient Operation Under Pointer Integrity Attacks"
+    venue: ACM/IEEE Annual International Symposium on Computer Architecture (ISCA) 2021
+    doi: 10.1109/ISCA52012.2021.00082
+    files:
+      - pdf:
+          name: Pre-Print
+          url: "/files/ISCA21_ZeRO.pdf"
+      - ppt:
+          name: Slides (Coming Soon)
+          url: "#"
+      - video:
+          name: Video (Coming Soon)
+          url: "#"
+
+- publication:
+    title: "No-FAT: Architectural Support for Low Overhead Memory Safety Checks"
+    venue: ACM/IEEE Annual International Symposium on Computer Architecture (ISCA) 2021
+    doi:  10.1109/ISCA52012.2021.00076 
+    files:
+      - pdf:
+          name: Pre-Print
+          url: "/files/ISCA21_NoFAT.pdf"
+      - ppt:
+          name: Slides (Coming Soon)
+          url: "#"
+      - video:
+          name: Video (Coming Soon)
+          url: "#"
+
