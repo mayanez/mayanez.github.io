@@ -10,8 +10,8 @@
           name: Slides (Coming Soon)
           url: "#"
       - video:
-          name: Video (Coming Soon)
-          url: "#"
+          name: Video
+          url: "https://www.youtube.com/watch?v=yoQ4HaQ0Bzc"
 
 - publication:
     title: "No-FAT: Architectural Support for Low Overhead Memory Safety Checks"
@@ -25,6 +25,6 @@
           name: Slides (Coming Soon)
           url: "#"
       - video:
-          name: Video (Coming Soon)
-          url: "#"
+          name: Video
+          url: "https://www.youtube.com/watch?v=XDGaYZioJBQ"
 
