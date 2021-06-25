@@ -4,11 +4,11 @@
     doi: 10.1109/ISCA52012.2021.00082
     files:
       - pdf:
-          name: Pre-Print
+          name: Paper
           url: "/files/ISCA21_ZeRO.pdf"
       - ppt:
-          name: Slides (Coming Soon)
-          url: "#"
+          name: Slides
+          url: "/files/ISCA21_ZeRO_Slides.pdf"
       - video:
           name: Video
           url: "https://www.youtube.com/watch?v=yoQ4HaQ0Bzc"
@@ -19,11 +19,11 @@
     doi:  10.1109/ISCA52012.2021.00076 
     files:
       - pdf:
-          name: Pre-Print
+          name: Paper
           url: "/files/ISCA21_NoFAT.pdf"
       - ppt:
-          name: Slides (Coming Soon)
-          url: "#"
+          name: Slides
+          url: "/files/ISCA21_NoFAT_Slides.pdf"
       - video:
           name: Video
           url: "https://www.youtube.com/watch?v=XDGaYZioJBQ"
